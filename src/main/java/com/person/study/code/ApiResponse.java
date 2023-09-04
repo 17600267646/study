@@ -1,5 +1,6 @@
 package com.person.study.code;
 
+import cn.hutool.core.date.DatePattern;
 import lombok.Builder;
 import lombok.Data;
 
@@ -17,6 +18,5 @@ public class ApiResponse<T> {
         this.data = data;
     }
 
-    // getters and setters...
 
 }

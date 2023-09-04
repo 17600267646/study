@@ -66,28 +66,6 @@
 			<version>1.1.10</version>
 		</dependency>
 
-
-<!--		&lt;!&ndash;mybatis-plus代码生成器&ndash;&gt;-->
-<!--		<dependency>-->
-<!--			<groupId>com.baomidou</groupId>-->
-<!--			<artifactId>mybatis-plus-generator</artifactId>-->
-<!--			<version>3.4.1</version>-->
-<!--		</dependency>-->
-
-
-<!--		&lt;!&ndash;velocity 模板引擎，Mybatis Plus 代码生成器需要&ndash;&gt;-->
-<!--		<dependency>-->
-<!--			<groupId>org.apache.velocity</groupId>-->
-<!--			<artifactId>velocity-engine-core</artifactId>-->
-<!--			<version>2.3</version>-->
-<!--		</dependency>-->
-<!--		&lt;!&ndash;mybatis-plus逆向功能所需的模板引擎&ndash;&gt;-->
-<!--		<dependency>-->
-<!--			<groupId>org.freemarker</groupId>-->
-<!--			<artifactId>freemarker</artifactId>-->
-<!--			<version>2.3.30</version>-->
-<!--		</dependency>-->
-
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
@@ -112,6 +90,11 @@
 			<optional>true</optional>
 		</dependency>
 
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>5.7.10</version>
+		</dependency>
 
 	</dependencies>
 

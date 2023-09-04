@@ -1,5 +1,9 @@
 #??????
 spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+#      date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
   #Mysql?????
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
