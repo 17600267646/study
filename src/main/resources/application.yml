@@ -54,3 +54,7 @@ mybatis:
 
 logging:
   config: classpath:logback-spring.xml
+
+elasticsearch:
+  cluster-nodes: localhost
+  port: 9200
