@@ -163,3 +163,19 @@
 2023-09-05 15:48:11,542 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
 2023-09-05 15:48:12,727 INFO [main] c.p.s.ElasticSearchTest Started ElasticSearchTest in 4.635 seconds (JVM running for 5.593)
 2023-09-05 15:48:13,312 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 16:29:48,607 INFO [main] c.p.s.StudyApplication Starting StudyApplication using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 70679 (/Users/gaojuhang/Downloads/temp/study/target/classes started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 16:29:48,609 INFO [main] c.p.s.StudyApplication No active profile set, falling back to 1 default profile: "default"
+2023-09-05 16:29:49,329 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 16:29:49,330 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 16:29:49,354 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-09-05 16:29:49,451 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 16:29:49,882 INFO [main] o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2023-09-05 16:29:49,971 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1307 ms
+2023-09-05 16:29:50,095 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 16:29:50,604 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 16:29:51,095 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 16:29:51,793 INFO [main] o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-05 16:29:51,803 INFO [main] c.p.s.StudyApplication Started StudyApplication in 3.76 seconds (JVM running for 4.439)
+2023-09-05 16:30:04,870 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2023-09-05 16:30:04,871 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet Completed initialization in 1 ms
+2023-09-05 16:30:14,599 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
