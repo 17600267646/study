@@ -1,0 +1,165 @@
+2023-09-05 15:08:32,145 INFO [main] c.p.s.StudyApplication Starting StudyApplication using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 68577 (/Users/gaojuhang/Downloads/temp/study/target/classes started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:08:32,149 INFO [main] c.p.s.StudyApplication No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:08:32,987 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:08:32,989 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:08:33,016 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:08:33,131 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:08:33,501 INFO [main] o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2023-09-05 15:08:33,572 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1352 ms
+2023-09-05 15:08:33,697 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:08:34,214 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:08:35,366 INFO [main] o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-05 15:08:35,377 INFO [main] c.p.s.StudyApplication Started StudyApplication in 4.165 seconds (JVM running for 5.21)
+2023-09-05 15:09:17,399 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2023-09-05 15:09:17,402 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet Completed initialization in 2 ms
+2023-09-05 15:13:36,700 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:13:59,372 INFO [main] c.p.s.StudyApplication Starting StudyApplication using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 68746 (/Users/gaojuhang/Downloads/temp/study/target/classes started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:13:59,375 INFO [main] c.p.s.StudyApplication No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:13:59,995 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:13:59,997 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:14:00,017 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:14:00,102 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:14:00,429 INFO [main] o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2023-09-05 15:14:00,499 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1050 ms
+2023-09-05 15:14:00,610 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:14:01,089 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:14:01,507 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:14:01,967 INFO [main] o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-05 15:14:01,974 INFO [main] c.p.s.StudyApplication Started StudyApplication in 3.279 seconds (JVM running for 4.143)
+2023-09-05 15:14:15,660 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:14:27,145 INFO [main] c.p.s.StudyApplication Starting StudyApplication using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 68767 (/Users/gaojuhang/Downloads/temp/study/target/classes started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:14:27,148 INFO [main] c.p.s.StudyApplication No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:14:27,837 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:14:27,838 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:14:27,856 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:14:27,945 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:14:28,381 INFO [main] o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2023-09-05 15:14:28,481 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1271 ms
+2023-09-05 15:14:28,637 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:14:29,060 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:14:39,899 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:14:40,558 INFO [main] o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-05 15:14:40,567 INFO [main] c.p.s.StudyApplication Started StudyApplication in 13.916 seconds (JVM running for 14.501)
+2023-09-05 15:15:01,655 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:18:57,666 INFO [main] c.p.s.Test1 Starting Test1 using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 68882 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:18:57,666 INFO [main] c.p.s.Test1 No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:18:58,511 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:18:58,514 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:18:58,541 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:18:58,690 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:18:59,321 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:18:59,992 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:19:00,725 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:19:02,005 INFO [main] c.p.s.Test1 Started Test1 in 4.986 seconds (JVM running for 6.129)
+2023-09-05 15:19:02,348 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:22:50,636 INFO [main] c.p.s.Test1 Starting Test1 using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 68973 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:22:50,637 INFO [main] c.p.s.Test1 No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:22:51,512 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:22:51,516 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:22:51,548 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:22:51,684 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:22:52,336 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:22:53,225 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:22:54,145 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:22:55,665 INFO [main] c.p.s.Test1 Started Test1 in 5.711 seconds (JVM running for 6.838)
+2023-09-05 15:22:56,117 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:23:21,873 INFO [main] c.p.s.Test1 Starting Test1 using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 68988 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:23:21,873 INFO [main] c.p.s.Test1 No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:23:22,659 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:23:22,662 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:23:22,686 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:23:22,819 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:23:23,397 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:23:24,353 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:23:25,274 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:23:26,651 INFO [main] c.p.s.Test1 Started Test1 in 5.24 seconds (JVM running for 6.227)
+2023-09-05 15:23:27,049 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:24:00,036 INFO [main] c.p.s.Test1 Starting Test1 using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 69005 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:24:00,038 INFO [main] c.p.s.Test1 No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:24:01,052 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:24:01,055 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:24:01,089 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:24:01,238 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:24:01,955 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:24:02,787 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:24:11,755 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:24:13,477 INFO [main] c.p.s.Test1 Started Test1 in 14.03 seconds (JVM running for 15.553)
+2023-09-05 15:24:24,896 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:29:55,150 INFO [main] c.p.s.ElasticSearchTest Starting ElasticSearchTest using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 69462 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:29:55,151 INFO [main] c.p.s.ElasticSearchTest No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:29:56,093 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:29:56,097 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:29:56,134 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:29:56,280 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:29:56,975 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:29:57,863 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:29:58,806 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:30:00,459 INFO [main] c.p.s.ElasticSearchTest Started ElasticSearchTest in 5.949 seconds (JVM running for 7.423)
+2023-09-05 15:30:13,343 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:38:20,515 INFO [main] c.p.s.ElasticSearchTest Starting ElasticSearchTest using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 69617 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:38:20,516 INFO [main] c.p.s.ElasticSearchTest No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:38:21,386 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:38:21,389 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:38:21,420 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:38:21,594 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:38:22,272 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:38:23,143 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:38:24,006 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:38:25,255 INFO [main] c.p.s.ElasticSearchTest Started ElasticSearchTest in 5.332 seconds (JVM running for 6.58)
+2023-09-05 15:38:26,256 WARN [main] o.e.c.RestClient request [PUT http://localhost:9200/indexrequest/application%2Fjson;%20charset=UTF-8/1529ed10e6eb4f678cb93f299946b26e?timeout=1m] returned 1 warnings: [299 Elasticsearch-6.8.10-537cb22 "the default number of shards will change from [5] to [1] in 7.0.0; if you wish to continue using the default of [5] shards, you must manage this on the create index request or with an index template"]
+2023-09-05 15:38:26,340 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:40:15,334 INFO [main] c.p.s.ElasticSearchTest Starting ElasticSearchTest using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 69652 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:40:15,335 INFO [main] c.p.s.ElasticSearchTest No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:40:16,197 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:40:16,201 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:40:16,236 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:40:16,386 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:40:16,999 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:40:17,637 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:40:18,356 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:40:19,517 INFO [main] c.p.s.ElasticSearchTest Started ElasticSearchTest in 4.613 seconds (JVM running for 5.769)
+2023-09-05 15:40:20,017 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:41:24,424 INFO [main] c.p.s.ElasticSearchTest Starting ElasticSearchTest using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 69702 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:41:24,425 INFO [main] c.p.s.ElasticSearchTest No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:41:25,591 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:41:25,596 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:41:25,635 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:41:25,817 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:41:26,542 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:41:27,485 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:41:28,504 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:41:29,898 INFO [main] c.p.s.ElasticSearchTest Started ElasticSearchTest in 6.063 seconds (JVM running for 7.318)
+2023-09-05 15:41:30,444 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:46:10,723 INFO [main] c.p.s.ElasticSearchTest Starting ElasticSearchTest using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 69806 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:46:10,724 INFO [main] c.p.s.ElasticSearchTest No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:46:11,708 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:46:11,713 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:46:11,740 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:46:11,891 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:46:12,577 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:46:13,478 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:46:14,475 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:46:16,157 INFO [main] c.p.s.ElasticSearchTest Started ElasticSearchTest in 6.084 seconds (JVM running for 7.292)
+2023-09-05 15:46:17,130 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:47:25,246 INFO [main] c.p.s.ElasticSearchTest Starting ElasticSearchTest using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 69830 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:47:25,246 INFO [main] c.p.s.ElasticSearchTest No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:47:26,062 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:47:26,068 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:47:26,096 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:47:26,243 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:47:26,853 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:47:27,651 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:47:28,461 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:47:29,952 INFO [main] c.p.s.ElasticSearchTest Started ElasticSearchTest in 5.198 seconds (JVM running for 6.276)
+2023-09-05 15:47:30,804 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed
+2023-09-05 15:48:08,487 INFO [main] c.p.s.ElasticSearchTest Starting ElasticSearchTest using Java 1.8.0_292 on gaojuhangdeMacBook-Pro.local with PID 69851 (started by gaojuhang in /Users/gaojuhang/Downloads/temp/study)
+2023-09-05 15:48:08,488 INFO [main] c.p.s.ElasticSearchTest No active profile set, falling back to 1 default profile: "default"
+2023-09-05 15:48:09,288 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-05 15:48:09,292 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-09-05 15:48:09,318 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-09-05 15:48:09,470 DEBUG [main] o.a.i.l.LogFactory Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-09-05 15:48:10,085 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure Init DruidDataSource
+2023-09-05 15:48:10,728 INFO [main] c.a.d.p.DruidDataSource {dataSource-1} inited
+2023-09-05 15:48:11,542 INFO [main] c.p.s.c.ElasticSearchConfig es服务器url=localhost,端口=9200
+2023-09-05 15:48:12,727 INFO [main] c.p.s.ElasticSearchTest Started ElasticSearchTest in 4.635 seconds (JVM running for 5.593)
+2023-09-05 15:48:13,312 INFO [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource {dataSource-1} closed

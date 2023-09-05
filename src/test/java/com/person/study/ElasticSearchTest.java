@@ -53,7 +53,7 @@ public class ElasticSearchTest {
         IndexResponse index = restHighLevelClient.index(indexRequest, ElasticSearchConfig.COMMON_OPTIONS);
         DocWriteResponse.Result result = index.getResult();
         if(DocWriteResponse.Result.CREATED.equals(index.getResult())){
-            System.out.println("创建索引 插入文档完毕！！");
+            System.out.println("创建索引 插入文档完毕！！result"+"result="+result);
         }
     }
     /*获取指定索引下的 id 文档*/
