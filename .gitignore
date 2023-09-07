@@ -1,0 +1,43 @@
+### Maven ###
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+**/src/test/**
+**/*.versionsBackup
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Eclipse ###
+.settings/
+.classpath
+.project
+
+### VS Code ###
+.vscode/
+
+
+
+**/log/
+**/spy.log
+*/.DS_Store
