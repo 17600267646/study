@@ -21,7 +21,12 @@ import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
+import org.elasticsearch.action.admin.indices.create.CreateIndexRequest;
+import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
+import org.elasticsearch.client.RequestOptions;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.common.xcontent.XContentBuilder;
+import org.elasticsearch.common.xcontent.XContentFactory;
 import java.io.IOException;
 import java.util.Map;
 import java.util.UUID;
@@ -37,10 +42,14 @@ public class ElasticSearchTest {
 
     @Autowired
     private RestHighLevelClient restHighLevelClient;
-    /*创建索引 插入文档*/
+
+    /**
+     * 创建索引 插入文档
+     * @throws IOException
+     */
     @Test
     public void test001() throws IOException {
-        IndexRequest indexRequest = new IndexRequest("indexrequest");
+        IndexRequest indexRequest = new IndexRequest("indexrequest_1");
         indexRequest.id(UUID.randomUUID().toString().replaceAll("-",""));
         String jsonString = "{" +
                 "\"user\":\"kimchy\"," +
@@ -56,7 +65,11 @@ public class ElasticSearchTest {
             System.out.println("创建索引 插入文档完毕！！result"+"result="+result);
         }
     }
-    /*获取指定索引下的 id 文档*/
+
+    /**
+     * 获取指定索引下的 id 文档
+     * @throws IOException
+     */
     @Test
     public void test002() throws IOException {
         GetRequest getRequest = new GetRequest("indexrequest");
@@ -77,7 +90,11 @@ public class ElasticSearchTest {
             }
         }
     }
-    /*模糊查询*/
+
+    /**
+     * 模糊查询
+     * @throws IOException
+     */
     @Test
     public void test004() throws IOException {
         //创建搜索请求。如果没有参数，这将对所有索引运行。
@@ -98,7 +115,11 @@ public class ElasticSearchTest {
             System.out.println(hit);
         }
     }
-    /*高亮查询*/
+
+    /**
+     * 高亮查询
+     * @throws IOException
+     */
     @Test
     public void heihtQueryTest01() throws IOException {
         //指定搜素请求信息
@@ -130,4 +151,61 @@ public class ElasticSearchTest {
             System.out.println(sourceAsMap);
         }
     }
+
+
+    /**
+     * 代码创建索引
+     */
+    @Test
+    public void createIndex() {
+        try {
+
+            // 创建索引请求对象
+            CreateIndexRequest request = new CreateIndexRequest("my_index_23");
+
+            // 设置索引参数
+            request.settings(Settings.builder()
+                    .put("index.number_of_shards", 3)
+                    .put("index.number_of_replicas", 2));
+
+            // 设置映射
+            XContentBuilder builder = XContentFactory.jsonBuilder();
+            builder.startObject();
+            {
+                builder.startObject("properties");
+                {
+                    builder.startObject("name");
+                    {
+                        builder.field("type", "text");
+                    }
+                    builder.endObject();
+
+
+                    builder.startObject("age");
+                    {
+                        builder.field("type", "integer");
+                    }
+                    builder.endObject();
+
+                }
+                builder.endObject();
+            }
+            builder.endObject();
+            request.mapping("novel", builder);
+
+            // 执行请求，获取响应
+            CreateIndexResponse response = restHighLevelClient.indices().create(request, RequestOptions.DEFAULT);
+
+            // 输出结果
+            boolean acknowledged = response.isAcknowledged();
+            System.out.println("Index creation acknowledged: " + acknowledged);
+
+            restHighLevelClient.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
 }
