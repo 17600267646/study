@@ -52,3 +52,10 @@ logging:
 elasticsearch:
   cluster-nodes: localhost
   port: 9200
+
+
+
+rocketmq:
+  producer:
+    group: procucer_group
+  name-server: localhost:9876

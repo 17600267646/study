@@ -1,5 +1,7 @@
 package com.person.study;
 
+import com.alibaba.fastjson.JSON;
+import com.person.study.entity.req.MqReq;
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
@@ -20,7 +22,10 @@ public class ConsumerRocketmq {
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
-
+                for (MessageExt msg : msgs) {
+                    MqReq myObject = JSON.parseObject(new String(msg.getBody()), MqReq.class);
+                    System.out.println("接收新的消息" + myObject);
+                }
                 System.out.printf("%s Receive New Messages: %s %n", Thread.currentThread().getName(), msgs);
                 // 标记该消息已经被成功消费
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;

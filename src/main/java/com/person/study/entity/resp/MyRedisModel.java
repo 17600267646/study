@@ -1,4 +1,4 @@
-package com.person.study.entity.model;
+package com.person.study.entity.resp;
 
 import lombok.Builder;
 import lombok.Data;

@@ -3,7 +3,7 @@ package com.person.study.controller;
 
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.RandomUtil;
-import com.person.study.entity.model.MyRedisModel;
+import com.person.study.entity.resp.MyRedisModel;
 import com.person.study.service.MyjkUserdataUserFootRecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
