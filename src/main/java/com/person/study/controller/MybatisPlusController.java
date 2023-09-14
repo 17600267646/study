@@ -9,8 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -35,6 +37,14 @@ public class MybatisPlusController {
         return ApiResponse.builder().code(200).message("success").data(list).build();
     }
 
+
+    @GetMapping("/getByStatus")
+    public ApiResponse getByStatus(HttpServletRequest httpServletRequest, @RequestParam("status") Integer status) {
+        MyjkUserdataUserFootRecord one = myjkUserdataUserFootRecordService.getOne(new QueryWrapper<MyjkUserdataUserFootRecord>().lambda().eq(MyjkUserdataUserFootRecord::getStatus, status));
+
+
+        return ApiResponse.builder().code(200).message("success").data(one).build();
+    }
 
 
 }

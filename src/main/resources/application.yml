@@ -59,3 +59,8 @@ rocketmq:
   producer:
     group: procucer_group
   name-server: localhost:9876
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
