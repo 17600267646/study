@@ -7,15 +7,17 @@ import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
+
+import java.util.UUID;
 
 
 @Aspect
 @Component
 @Slf4j
 public class LoggingAspect {
+
 
 //    private static final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
@@ -27,6 +29,8 @@ public class LoggingAspect {
         String methodName = joinPoint.getSignature().getName();
         String className = joinPoint.getTarget().getClass().getSimpleName();
         String methodPath = className + "/" + methodName;
+        String traceId = generateTraceId();
+        MDC.put("traceId", traceId);
         log.info("开始调用/" + methodPath+"请求参数"+ JSONUtil.toJsonStr(joinPoint.getArgs()));
 
     }
@@ -38,5 +42,11 @@ public class LoggingAspect {
 //        String methodPath = className + "/" + methodName;
 //        logger.error("Method Exit: " + methodPath);
         log.info("返回结果" + JSONUtil.toJsonStr(result));
+        MDC.remove("traceId");
+    }
+
+
+    private String generateTraceId() {
+        return UUID.randomUUID().toString();
     }
 }
