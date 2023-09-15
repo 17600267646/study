@@ -89,65 +89,13 @@
         <appender-ref ref="ASYNC_FILE_ERROR"/>
     </root>
 
-<!--    <appender name="msystem-log" class="org.apache.skywalking.apm.toolkit.log.logback.v1.x.log.GRPCLogClientAppender">-->
-<!--        &lt;!&ndash; 日志输出编码 &ndash;&gt;-->
-<!--        <encoder>-->
-<!--            &lt;!&ndash;格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符&ndash;&gt;-->
-<!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n-->
-<!--            </pattern>-->
-<!--        </encoder>-->
-<!--        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">-->
-<!--            <layout class="org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout">-->
-<!--                <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level logger_name:%logger{36} - [%tid] - message:%msg%n</pattern>-->
-<!--            </layout>-->
-<!--        </encoder>-->
-<!--    </appender>-->
-
-<!--    <root level="info">-->
-<!--        <appender-ref ref="msystem-log"/>-->
-<!--    </root>-->
-
-<!--    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">-->
-<!--        <encoder>-->
-<!--            <pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>-->
-<!--            <charset>UTF-8</charset>-->
-<!--        </encoder>-->
-<!--    </appender>-->
-
-<!--    <appender name="rollingFile"-->
-<!--              class="ch.qos.logback.core.rolling.RollingFileAppender">-->
-<!--        <file>./${log_name}.log</file>-->
-<!--        <append>true</append>-->
-<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
-<!--            <fileNamePattern>./archive/${log_name}-%d.%i.zip</fileNamePattern>-->
-<!--            <maxHistory>10</maxHistory>-->
-<!--            <timeBasedFileNamingAndTriggeringPolicy-->
-<!--                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
-<!--                <maxFileSize>10MB</maxFileSize>-->
-<!--            </timeBasedFileNamingAndTriggeringPolicy>-->
-<!--        </rollingPolicy>-->
-<!--        <encoder>-->
-<!--            <pattern>%date %level [%thread] %logger{10} %msg%n</pattern>-->
-<!--            <charset>UTF-8</charset>-->
-<!--        </encoder>-->
-<!--    </appender>-->
-
-<!--    <appender name="async" class="ch.qos.logback.classic.AsyncAppender">-->
-<!--        <queueSize>512</queueSize>-->
-<!--        <appender-ref ref="rollingFile"/>-->
-<!--    </appender>-->
-
-<!--    <root level="${log.level}">-->
-<!--        <appender-ref ref="console"/>-->
-<!--        <appender-ref ref="async"/>-->
-<!--    </root>-->
 
     <logger name="org.springframework" level="INFO"/>
     <logger name="com.baomidou.mybatisplus" level="INFO"/>
     <logger name="com.opensymphony" level="ERROR"/>
     <logger name="org.apache" level="ERROR"/>
     <logger name="org.mybatis.spring" level="ERROR"/>
-    <logger name="com.zaxxer.hikari" level="ERROR"/>
+    <logger name="com.person.study" level="info"/>
     <logger name="org.hibernate" level="ERROR"/>
     <logger name="org.quartz" level="ERROR"/>
     <logger name="springfox" level="ERROR"/>
