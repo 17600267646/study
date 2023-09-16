@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.person.study.code.ApiResponse;
 import com.person.study.entity.MyjkUserdataUserFootRecord;
 import com.person.study.service.MyjkUserdataUserFootRecordService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/myjk")
+@Slf4j
 public class MybatisPlusController {
 
     @Autowired
@@ -41,6 +43,15 @@ public class MybatisPlusController {
     @GetMapping("/getByStatus")
     public ApiResponse getByStatus(HttpServletRequest httpServletRequest, @RequestParam("status") Integer status) {
         MyjkUserdataUserFootRecord one = myjkUserdataUserFootRecordService.getOne(new QueryWrapper<MyjkUserdataUserFootRecord>().lambda().eq(MyjkUserdataUserFootRecord::getStatus, status));
+
+
+        return ApiResponse.builder().code(200).message("success").data(one).build();
+    }
+
+
+    @GetMapping("/testLog")
+    public ApiResponse testLog(HttpServletRequest httpServletRequest, @RequestParam("status") Integer status) {
+        MyjkUserdataUserFootRecord one = myjkUserdataUserFootRecordService.testLog();
 
 
         return ApiResponse.builder().code(200).message("success").data(one).build();
