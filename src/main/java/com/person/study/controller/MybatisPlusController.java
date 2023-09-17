@@ -51,7 +51,7 @@ public class MybatisPlusController {
 
     @GetMapping("/testLog")
     public ApiResponse testLog(HttpServletRequest httpServletRequest, @RequestParam("status") Integer status) {
-        MyjkUserdataUserFootRecord one = myjkUserdataUserFootRecordService.testLog();
+        MyjkUserdataUserFootRecord one = myjkUserdataUserFootRecordService.testLog(status);
 
 
         return ApiResponse.builder().code(200).message("success").data(one).build();

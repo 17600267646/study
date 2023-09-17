@@ -13,6 +13,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface MyjkUserdataUserFootRecordService extends IService<MyjkUserdataUserFootRecord> {
 
-    MyjkUserdataUserFootRecord testLog();
+    MyjkUserdataUserFootRecord testLog(Integer status);
 
 }

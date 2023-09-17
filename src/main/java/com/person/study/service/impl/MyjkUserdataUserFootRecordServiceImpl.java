@@ -25,8 +25,8 @@ public class MyjkUserdataUserFootRecordServiceImpl extends ServiceImpl<MyjkUserd
     private MyjkUserdataUserFootRecordMapper myjkUserdataUserFootRecordMapper;
 
     @Override
-    public MyjkUserdataUserFootRecord testLog() {
+    public MyjkUserdataUserFootRecord testLog(Integer status) {
         log.info("进入service了");
-        return myjkUserdataUserFootRecordMapper.selectOne(new QueryWrapper<>());
+        return myjkUserdataUserFootRecordMapper.selectOne(new QueryWrapper<MyjkUserdataUserFootRecord>().lambda().eq(MyjkUserdataUserFootRecord::getStatus,status));
     }
 }
