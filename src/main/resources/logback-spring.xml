@@ -83,6 +83,7 @@
     <logger name="java.sql" level="@log.lever@"/>
     <logger name="org.apache.ibatis" level="@log.lever@"/>
     <logger name="org.springframework" level="@log.lever@"/>
+    <logger name="com.person.study.mapper" level="DEBUG"/>
 
     <root level="INFO">
         <!-- 本地调试才输出控制台，注意不要放开提交到主干 -->
@@ -94,7 +95,7 @@
 
 
     <logger name="org.springframework" level="INFO"/>
-    <logger name="com.baomidou.mybatisplus" level="INFO"/>
+    <logger name="com.baomidou.mybatisplus" level="DEBUG"/>
     <logger name="com.opensymphony" level="ERROR"/>
     <logger name="org.apache" level="ERROR"/>
     <logger name="org.mybatis.spring" level="ERROR"/>
