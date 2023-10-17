@@ -19,10 +19,9 @@ public class ProducerRocketmq {
         for (int i = 0; i < 10; i++) {
             System.out.println("第"+i+"次");
             // 创建消息，并指定Topic，Tag和消息体
-            Message msg = new Message("TopicTest" /* Topic */,
-                    "TagA" /* Tag */,
-                    ("Hello RocketMQ " + i).getBytes() /* Message body */
-            );
+            Message msg = new Message("TopicTest" , "TagA" ,("Hello RocketMQ " + i).getBytes());
+            //设置消息类型
+            msg.putUserProperty("MessageType","normal");
             // 发送消息到一个Broker
 //            producer.setSendMessageWithVIPChannel(false);
             SendResult sendResult = producer.send(msg,Long.parseLong("20000"));
